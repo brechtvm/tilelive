@@ -1,0 +1,11 @@
+version: '2'
+services:
+  tessera:
+    build: ./
+    environment:
+      - TESSERA_PORT=8081
+      - CACHE_SIZE=128
+    ports:
+      - "8081:8081"
+    volumes:
+      - ~/Documents/MapHubs/GLAD:/data

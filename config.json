@@ -1,0 +1,11 @@
+{
+  "/glad": {
+    "source": "mapnik://./configs/glad.xml"
+  },
+  "/test": {
+    "source": "mapnik://./configs/test.xml"
+  },
+  "/stamen_toner": {
+    "source": "http://tile.stamen.com/toner/{z}/{x}/{y}.png"
+  }
+}
