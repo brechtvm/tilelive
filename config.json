@@ -2,6 +2,9 @@
   "/glad": {
     "source": "mapnik://./configs/glad.xml"
   },
+  "/lossyear": {
+    "source": "mapnik://./configs/lossyear.xml"
+  },
   "/test": {
     "source": "mapnik://./configs/test.xml"
   },

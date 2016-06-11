@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="bounds">-180.0000, -90.0000, 180.0000, 90.0000</Parameter>
+  <Parameter name="center">26.0156,-0.1758,6</Parameter>
+  <Parameter name="format">png8</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="maxzoom">18</Parameter>
+  <Parameter name="scale">1</Parameter>
+  <Parameter name="metatile">2</Parameter>
+  <Parameter name="name"><![CDATA[Forest Loss By Year]]></Parameter>
+</Parameters>
+
+
+<Style name="lossyear" filter-mode="first">
+  <Rule>
+    <RasterSymbolizer opacity="1" default-mode="linear" default-color="rgba(0, 0, 0, 0)" >
+	<stop value="1" color="#ffffb2" />
+	<stop value="2" color="#ffffb2" />
+	<stop value="3" color="#ffffb2" />
+	<stop value="4" color="#ffffb2" />
+	<stop value="5" color="#ffffb2" />
+	<stop value="6" color="#fed66d" />
+	<stop value="7" color="#fed66d" />
+	<stop value="8" color="#fed66d" />
+	<stop value="9" color="#fed66d" />
+	<stop value="10" color="#fed66d" />
+	<stop value="11" color="#fda648" />
+	<stop value="12" color="#fd4c00" />
+	<stop value="13" color="#e52f21" />
+	<stop value="14" color="#bd0026" /></RasterSymbolizer>
+  </Rule>
+</Style>
+
+<Layer name="lossyear"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName>lossyear</StyleName>
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+       <Parameter name="file"><![CDATA[/data/lossyear/lossyear.vrt]]></Parameter>
+       <Parameter name="band"><![CDATA[1]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
