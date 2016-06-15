@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="bounds">-180,-85.05112877980659,180,85.05112877980659</Parameter>
+  <Parameter name="center">0,0,2</Parameter>
+  <Parameter name="format">png</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="maxzoom">22</Parameter>
+  <Parameter name="scale">1</Parameter>
+  <Parameter name="metatile">2</Parameter>
+  <Parameter name="name"><![CDATA[Logging Roads]]></Parameter>
+</Parameters>
+
+
+<Style name="moabi_logging_roads-fill" filter-mode="first">
+  <Rule>
+    <Filter>([start_date] = 'after 2013')</Filter>
+    <LineSymbolizer stroke="#cc5506" />
+  </Rule>
+  <Rule>
+    <Filter>([start_date] = '2013')</Filter>
+    <LineSymbolizer stroke="#e46c1c" />
+  </Rule>
+  <Rule>
+    <Filter>([start_date] = '2012')</Filter>
+    <LineSymbolizer stroke="#e8782b" />
+  </Rule>
+  <Rule>
+    <Filter>([start_date] = '2011')</Filter>
+    <LineSymbolizer stroke="#eb8439" />
+  </Rule>
+  <Rule>
+    <Filter>([start_date] = '2010')</Filter>
+    <LineSymbolizer stroke="#ef8f47" />
+  </Rule>
+  <Rule>
+    <Filter>([start_date] = '2009')</Filter>
+    <LineSymbolizer stroke="#f19a54" />
+  </Rule>
+  <Rule>
+    <Filter>([start_date] = '2008')</Filter>
+    <LineSymbolizer stroke="#f4a661" />
+  </Rule>
+  <Rule>
+    <Filter>([start_date] = '2007')</Filter>
+    <LineSymbolizer stroke="#f6b06e" />
+  </Rule>
+  <Rule>
+    <Filter>([start_date] = '2006')</Filter>
+    <LineSymbolizer stroke="#f8bc7b" />
+  </Rule>
+  <Rule>
+    <Filter>([start_date] = '2005')</Filter>
+    <LineSymbolizer stroke="#f9c788" />
+  </Rule>
+  <Rule>
+    <Filter>([start_date] = '2004')</Filter>
+    <LineSymbolizer stroke="#fad396" />
+  </Rule>
+  <Rule>
+    <Filter>([start_date] = '2003')</Filter>
+    <LineSymbolizer stroke="#fadea3" />
+  </Rule>
+  <Rule>
+    <Filter>([start_date] = '2002')</Filter>
+    <LineSymbolizer stroke="#fae8b0" />
+  </Rule>
+  <Rule>
+    <Filter>([start_date] = '2001')</Filter>
+    <LineSymbolizer stroke="#f9f3be" />
+  </Rule>
+  <Rule>
+    <Filter>([start_date] = '2000')</Filter>
+    <LineSymbolizer stroke="#f8ffcc" />
+  </Rule>
+  <Rule>
+    <Filter>([start_date] = 'before 2000')</Filter>
+    <LineSymbolizer stroke="#fbffdd" />
+  </Rule>
+</Style>
+<Style name="moabi_logging_roads" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([start_date] = 'after 2013')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([start_date] = 'after 2013')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([start_date] = 'after 2013')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([start_date] = 'after 2013')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" stroke-width="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([start_date] = '2013')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([start_date] = '2013')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([start_date] = '2013')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([start_date] = '2013')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" stroke-width="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([start_date] = '2012')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([start_date] = '2012')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([start_date] = '2012')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([start_date] = '2012')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" stroke-width="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([start_date] = '2011')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([start_date] = '2011')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([start_date] = '2011')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([start_date] = '2011')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" stroke-width="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([start_date] = '2010')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([start_date] = '2010')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([start_date] = '2010')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([start_date] = '2010')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" stroke-width="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([start_date] = '2009')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([start_date] = '2009')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([start_date] = '2009')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([start_date] = '2009')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" stroke-width="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([start_date] = '2008')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([start_date] = '2008')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([start_date] = '2008')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([start_date] = '2008')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" stroke-width="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([start_date] = '2007')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([start_date] = '2007')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([start_date] = '2007')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([start_date] = '2007')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" stroke-width="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([start_date] = '2006')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([start_date] = '2006')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([start_date] = '2006')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([start_date] = '2006')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" stroke-width="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([start_date] = '2005')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([start_date] = '2005')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([start_date] = '2005')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([start_date] = '2005')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" stroke-width="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([start_date] = '2004')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([start_date] = '2004')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([start_date] = '2004')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([start_date] = '2004')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" stroke-width="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([start_date] = '2003')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([start_date] = '2003')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([start_date] = '2003')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([start_date] = '2003')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" stroke-width="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([start_date] = '2002')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([start_date] = '2002')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([start_date] = '2002')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([start_date] = '2002')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" stroke-width="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([start_date] = '2001')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([start_date] = '2001')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([start_date] = '2001')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([start_date] = '2001')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" stroke-width="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([start_date] = '2000')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([start_date] = '2000')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([start_date] = '2000')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([start_date] = '2000')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" stroke-width="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([start_date] = 'before 2000')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([start_date] = 'before 2000')</Filter>
+    <LineSymbolizer stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([start_date] = 'before 2000')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([start_date] = 'before 2000')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" stroke-width="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke="#aaaaaa" stroke-width="0.6" />
+  </Rule>
+</Style>
+<Style name="moabi_logging_roads-case" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke="#444444" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="2.4000000000000004" stroke-linejoin="round" stroke-linecap="round" stroke="#444444" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" stroke="#444444" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke="#444444" stroke-width="1.2" />
+  </Rule>
+</Style>
+
+
+
+<Layer name="logging_roads" srs="+init=epsg:4326">
+    <StyleName>moabi_logging_roads-case</StyleName>
+    <StyleName>moabi_logging_roads</StyleName>
+    <StyleName>moabi_logging_roads-fill</StyleName>
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">/data/osm_logging_roads/osm_logging_roads.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>

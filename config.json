@@ -5,6 +5,9 @@
   "/lossyear": {
     "source": "mapnik://./configs/lossyear.xml"
   },
+  "/loggingroads": {
+    "source": "mapnik://./configs/logging_roads.xml"
+  },
   "/test": {
     "source": "mapnik://./configs/test.xml"
   },
