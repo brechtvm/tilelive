@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="bounds">-180.0000, -90.0000, 180.0000, 90.0000</Parameter>
+  <Parameter name="center">26.0156,-0.1758,6</Parameter>
+  <Parameter name="format">png8</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="maxzoom">18</Parameter>
+  <Parameter name="scale">1</Parameter>
+  <Parameter name="metatile">2</Parameter>
+  <Parameter name="name"><![CDATA[Projected Deforestation in DRC 2011-2030 (Base Scenario)]]></Parameter>
+</Parameters>
+
+
+<Style name="base" filter-mode="first">
+  <Rule>
+    <Filter>([CLASS] = 0)</Filter>
+    <PolygonSymbolizer fill-opacity="0.7" fill="#b2b2b2"/>
+    <LineSymbolizer stroke="rgb(25%,25%,25%)" stroke-width="0.1" />
+  </Rule>
+  <Rule>
+    <Filter>([CLASS] = 1)</Filter>
+    <PolygonSymbolizer fill-opacity="0.7" fill="#f5b800"/>
+    <LineSymbolizer stroke="rgb(25%,25%,25%)" stroke-width="0.1" />
+  </Rule>
+  <Rule>
+    <Filter>([CLASS] = 2)</Filter>
+    <PolygonSymbolizer fill-opacity="0.7" fill="#f57a00"/>
+    <LineSymbolizer stroke="rgb(25%,25%,25%)" stroke-width="0.1" />
+  </Rule>
+  <Rule>
+    <Filter>([CLASS] = 3)</Filter>
+    <PolygonSymbolizer fill-opacity="0.7" fill="#f53d00"/>
+    <LineSymbolizer stroke="rgb(25%,25%,25%)" stroke-width="0.1" />
+  </Rule>
+  <Rule>
+    <Filter>([CLASS] = 4)</Filter>
+    <PolygonSymbolizer fill-opacity="0.7" fill="#f50000"/>
+    <LineSymbolizer stroke="rgb(25%,25%,25%)" stroke-width="0.1" />
+  </Rule>
+
+</Style>
+
+
+<Layer name="base" srs="+init=epsg:4326">
+    <StyleName>base</StyleName>
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">/data/iiasa/Defor2011_2030_Value_BaseScen.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>

@@ -8,6 +8,12 @@
   "/loggingroads": {
     "source": "mapnik://./configs/logging_roads.xml"
   },
+  "/iiasabase": {
+    "source": "mapnik://./configs/iiasa_base.xml"
+  },
+  "/iiasaimproved": {
+    "source": "mapnik://./configs/iiasa_improved.xml"
+  },
   "/test": {
     "source": "mapnik://./configs/test.xml"
   },
