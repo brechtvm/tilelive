@@ -14,6 +14,9 @@
   "/iiasaimproved": {
     "source": "mapnik://./configs/iiasa_improved.xml"
   },
+  "/ccmss_landcover": {
+    "source": "mapnik://./configs/ccmss_landcover.xml"
+  },
   "/test": {
     "source": "mapnik://./configs/test.xml"
   },
