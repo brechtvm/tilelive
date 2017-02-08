@@ -1,62 +1,62 @@
 {
-  "/glad": {
+  "/raster/glad": {
     "source": "mapnik://./configs/glad.xml"
   },
-  "/loggingroads": {
+  "/raster/loggingroads": {
     "source": "mapnik://./configs/logging_roads.xml"
   },  
   "/test": {
     "source": "mapnik://./configs/test.xml"
   },
-   "/congo-landsat-2016": {
+   "/raster/congo-landsat-2016": {
     "source": "http://d2h71bpqsyf4vw.cloudfront.net/2016/{z}/{x}/{y}.png"
   },
-   "/congo-landsat-2015": {
+   "/raster/congo-landsat-2015": {
     "source": "http://d2h71bpqsyf4vw.cloudfront.net/2015/{z}/{x}/{y}.png"
   },
-   "/congo-landsat-2014": {
+   "/raster/congo-landsat-2014": {
     "source": "http://d2h71bpqsyf4vw.cloudfront.net/2014/{z}/{x}/{y}.png"
   },
-   "/congo-landsat-2013": {
+   "/raster/congo-landsat-2013": {
     "source": "http://d2h71bpqsyf4vw.cloudfront.net/2013/{z}/{x}/{y}.png"
   },
-   "/congo-landsat-2012": {
+   "/raster/congo-landsat-2012": {
     "source": "http://d2h71bpqsyf4vw.cloudfront.net/2012/{z}/{x}/{y}.png"
   },
-   "/congo-landsat-2011": {
+   "/raster/congo-landsat-2011": {
     "source": "http://d2h71bpqsyf4vw.cloudfront.net/2011/{z}/{x}/{y}.png"
   },
-   "/congo-landsat-2010": {
+   "/raster/congo-landsat-2010": {
     "source": "http://d2h71bpqsyf4vw.cloudfront.net/2010/{z}/{x}/{y}.png"
   },
-   "/congo-landsat-2009": {
+   "/raster/congo-landsat-2009": {
     "source": "http://d2h71bpqsyf4vw.cloudfront.net/2009/{z}/{x}/{y}.png"
   },
-   "/congo-landsat-2008": {
+   "/raster/congo-landsat-2008": {
     "source": "http://d2h71bpqsyf4vw.cloudfront.net/2008/{z}/{x}/{y}.png"
   },
    "/congo-landsat-2007": {
     "source": "http://d2h71bpqsyf4vw.cloudfront.net/2007/{z}/{x}/{y}.png"
   },
-   "/congo-landsat-2006": {
+   "/raster/congo-landsat-2006": {
     "source": "http://d2h71bpqsyf4vw.cloudfront.net/2006/{z}/{x}/{y}.png"
   },
-   "/congo-landsat-2005": {
+   "/raster/congo-landsat-2005": {
     "source": "http://d2h71bpqsyf4vw.cloudfront.net/2005/{z}/{x}/{y}.png"
   },
-   "/congo-landsat-2004": {
+   "/raster/congo-landsat-2004": {
     "source": "http://d2h71bpqsyf4vw.cloudfront.net/2004/{z}/{x}/{y}.png"
   },
-   "/congo-landsat-2003": {
+   "/raster/congo-landsat-2003": {
     "source": "http://d2h71bpqsyf4vw.cloudfront.net/2003/{z}/{x}/{y}.png"
   },
-   "/congo-landsat-2002": {
+   "/raster/congo-landsat-2002": {
     "source": "http://d2h71bpqsyf4vw.cloudfront.net/2002/{z}/{x}/{y}.png"
   },
-   "/congo-landsat-2001": {
+   "/raster/congo-landsat-2001": {
     "source": "http://d2h71bpqsyf4vw.cloudfront.net/2001/{z}/{x}/{y}.png"
   },
-   "/congo-landsat-2000": {
+   "/raster/congo-landsat-2000": {
     "source": "http://d2h71bpqsyf4vw.cloudfront.net/2000/{z}/{x}/{y}.png"
   }
 
