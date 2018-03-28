@@ -5,7 +5,7 @@
         <Rule>
             <RasterSymbolizer>
                 <RasterColorizer default-mode="linear" epsilon="0.001">
-                    <stop color="$f20400" value="0" mode="discrete" />
+                    <stop color="#f20400" value="0" mode="discrete" />
                 </RasterColorizer>
             </RasterSymbolizer>
         </Rule>
