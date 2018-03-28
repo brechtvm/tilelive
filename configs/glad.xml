@@ -1,91 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
-<Style name="2016">
-  <Rule>
-    <RasterSymbolizer>
-      <RasterColorizer default-mode="linear" epsilon="0.001">
-        <stop color="red"         value = "0"   mode = "discrete" />
-      </RasterColorizer>
-    </RasterSymbolizer>
-  </Rule>
-</Style>
+    
+    <Style name="2017">
+        <Rule>
+            <RasterSymbolizer>
+                <RasterColorizer default-mode="linear" epsilon="0.001">
+                    <stop color="$f20400" value="0" mode="discrete" />
+                </RasterColorizer>
+            </RasterSymbolizer>
+        </Rule>
+    </Style>
+    
+    <Style name="2016">
+        <Rule>
+            <RasterSymbolizer>
+                <RasterColorizer default-mode="linear" epsilon="0.001">
+                    <stop color="#a30200" value="0" mode="discrete" />
+                </RasterColorizer>
+            </RasterSymbolizer>
+        </Rule>
+    </Style>
 
-<Style name="2015">
-  <Rule>
-    <RasterSymbolizer>
-      <RasterColorizer default-mode="linear" epsilon="0.001">
-        <stop color="#ffa409"         value = "0"   mode = "linear" />
-        <stop color="#ff4100"         value = "365"   mode = "discrete" />
-      </RasterColorizer>
-    </RasterSymbolizer>
-  </Rule>
-</Style>
+    <Style name="2015">
+    <Rule>
+        <RasterSymbolizer>
+            <RasterColorizer default-mode="linear" epsilon="0.001">
+                <stop color="#4d0605" value="0" mode="discrete" />
+            </RasterColorizer>
+        </RasterSymbolizer>
+    </Rule>
+    </Style>
 
-  <Layer name="brazil2016" srs="+init=epsg:4326">
-      <StyleName>2016</StyleName>
-      <Datasource>
-          <Parameter name="file">/data/brazil_day2016.tif</Parameter>
-          <Parameter name="type">gdal</Parameter>
-          <Parameter name="band">1</Parameter>
-      </Datasource>
-  </Layer>
+    <Layer name="nsa2015" srs="+init=epsg:4326">
+        <StyleName>2015</StyleName>
+        <Datasource>
+            <Parameter name="file">/data/glad/nsa_day2015.tif</Parameter>
+            <Parameter name="type">gdal</Parameter>
+            <Parameter name="band">1</Parameter>
+        </Datasource>
+    </Layer>
 
-<Layer name="peru2016" srs="+init=epsg:4326">
-    <StyleName>2016</StyleName>
-    <Datasource>
-        <Parameter name="file">/data/peru_day2016.tif</Parameter>
-        <Parameter name="type">gdal</Parameter>
-        <Parameter name="band">1</Parameter>
-    </Datasource>
-</Layer>
+    <Layer name="africa2015" srs="+init=epsg:4326">
+        <StyleName>2015</StyleName>
+        <Datasource>
+            <Parameter name="file">/data/glad/Africa_day_2015n.tif</Parameter>
+            <Parameter name="type">gdal</Parameter>
+            <Parameter name="band">1</Parameter>
+        </Datasource>
+    </Layer>
 
-<Layer name="peru2015" srs="+init=epsg:4326">
-    <StyleName>2015</StyleName>
-    <Datasource>
-        <Parameter name="file">/data/peru_day2015.tif</Parameter>
-        <Parameter name="type">gdal</Parameter>
-        <Parameter name="band">1</Parameter>
-    </Datasource>
-</Layer>
+    <Layer name="sea2015" srs="+init=epsg:4326">
+        <StyleName>2015</StyleName>
+        <Datasource>
+            <Parameter name="file">/data/glad/SEA_day_2015n.tif</Parameter>
+            <Parameter name="type">gdal</Parameter>
+            <Parameter name="band">1</Parameter>
+        </Datasource>
+    </Layer>
 
-<Layer name="borneo2016" srs="+init=epsg:4326">
-    <StyleName>2016</StyleName>
-    <Datasource>
-        <Parameter name="file">/data/borneo_day2016.tif</Parameter>
-        <Parameter name="type">gdal</Parameter>
-        <Parameter name="band">1</Parameter>
-    </Datasource>
-</Layer>
+    <Layer name="nsa2016" srs="+init=epsg:4326">
+        <StyleName>2016</StyleName>
+        <Datasource>
+            <Parameter name="file">/data/glad/nsa_day2016.tif</Parameter>
+            <Parameter name="type">gdal</Parameter>
+            <Parameter name="band">1</Parameter>
+        </Datasource>
+    </Layer>
 
-<Layer name="borneo2015" srs="+init=epsg:4326">
-    <StyleName>2015</StyleName>
-    <Datasource>
-        <Parameter name="file">/data/borneo_day2015.tif</Parameter>
-        <Parameter name="type">gdal</Parameter>
-        <Parameter name="band">1</Parameter>
-    </Datasource>
-</Layer>
+    <Layer name="africa2016" srs="+init=epsg:4326">
+        <StyleName>2016</StyleName>
+        <Datasource>
+            <Parameter name="file">/data/glad/Africa_day_2016n.tif</Parameter>
+            <Parameter name="type">gdal</Parameter>
+            <Parameter name="band">1</Parameter>
+        </Datasource>
+    </Layer>
 
-<Layer name="roc2016" srs="+init=epsg:4326">
-    <StyleName>2016</StyleName>
-    <Datasource>
-        <Parameter name="file">/data/roc_day2016.tif</Parameter>
-        <Parameter name="type">gdal</Parameter>
-        <Parameter name="band">1</Parameter>
-    </Datasource>
-</Layer>
+    <Layer name="sea2016" srs="+init=epsg:4326">
+        <StyleName>2016</StyleName>
+        <Datasource>
+            <Parameter name="file">/data/glad/SEA_day_2016n.tif</Parameter>
+            <Parameter name="type">gdal</Parameter>
+            <Parameter name="band">1</Parameter>
+        </Datasource>
+    </Layer>
 
-<Layer name="roc2015" srs="+init=epsg:4326">
-    <StyleName>2015</StyleName>
-    <Datasource>
-        <Parameter name="file">/data/roc_day2015.tif</Parameter>
-        <Parameter name="type">gdal</Parameter>
-        <Parameter name="band">1</Parameter>
-    </Datasource>
-</Layer>
+    <Layer name="nsa2017" srs="+init=epsg:4326">
+        <StyleName>2017</StyleName>
+        <Datasource>
+            <Parameter name="file">/data/glad/nsa_day2017.tif</Parameter>
+            <Parameter name="type">gdal</Parameter>
+            <Parameter name="band">1</Parameter>
+        </Datasource>
+    </Layer>
 
+    <Layer name="africa2017" srs="+init=epsg:4326">
+        <StyleName>2017</StyleName>
+        <Datasource>
+            <Parameter name="file">/data/glad/Africa_day_2017n.tif</Parameter>
+            <Parameter name="type">gdal</Parameter>
+            <Parameter name="band">1</Parameter>
+        </Datasource>
+    </Layer>
 
-
-
-
+    <Layer name="sea2017" srs="+init=epsg:4326">
+        <StyleName>2017</StyleName>
+        <Datasource>
+            <Parameter name="file">/data/glad/SEA_day_2017n.tif</Parameter>
+            <Parameter name="type">gdal</Parameter>
+            <Parameter name="band">1</Parameter>
+        </Datasource>
+    </Layer>
 </Map>
