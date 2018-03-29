@@ -14,8 +14,8 @@ RUN apt-get update && apt-get install -y wget git curl libssl-dev openssl nano u
 WORKDIR /var/tessera
 
 #install tessera
-COPY package.json yarn.lock /var/tessera/
-RUN yarn install --production --pure-lockfile
+COPY package.json /var/tessera/
+RUN yarn install --production
 
 COPY ./configs /var/tessera/configs
 COPY ./config.json /var/tessera/config.json
