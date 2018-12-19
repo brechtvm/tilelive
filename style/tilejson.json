@@ -1,0 +1,16 @@
+{
+    "tilejson": "1.0.0",
+    "name": "OpenStreetMap",
+    "description": "A free editable map of the whole world.",
+    "version": "1.0.0",
+    "attribution": "(c) OpenStreetMap contributors, CC-BY-SA",
+    "scheme": "xyz",
+    "sprite": "mapbox://sprites/mapbox/streets-v8",
+    "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+    "tiles": [
+        "http://localhost:8080/tiles/{z}/{x}/{y}.pbf"
+    ],
+    "minzoom": 0,
+    "maxzoom": 18,
+    "bounds": [-180, -85, 180, 85]
+}

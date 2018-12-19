@@ -1,0 +1,22 @@
+{
+  "/LU_BMStyle_tm2source": {
+    "source": "tmsource:///Users/seth/style/osm-bright.tm2source",
+    "headers": {
+      "Cache-Control": "public,max-age={{#tileJSON}}86400{{/tileJSON}}{{#tile}}3600{{/tile}}",
+      "Surrogate-Control": "max-age=86400",
+      "Surrogate-Keys": "{{#tile}}z{{zoom}} x{{x}} y{{y}}{{/tile}}"
+    }
+  }
+}
+
+/* Tested & Working */
+{
+  "/LU_BMStyle": {
+    "source": "tilejson+http://tileserver.maptiler.com/nasa.json",
+    "headers": {
+      "Cache-Control": "public,max-age={{#tileJSON}}86400{{/tileJSON}}{{#tile}}3600{{/tile}}",
+      "Surrogate-Control": "max-age=86400",
+      "Surrogate-Keys": "{{#tile}}z{{zoom}} x{{x}} y{{y}}{{/tile}}"
+    }
+  }
+}

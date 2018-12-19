@@ -1,16 +1,41 @@
 {
-  "name": "docker-tessera",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "tessera",
+  "version": "0.13.1",
+  "description": "A tilelive-based tile server",
+  "main": "lib/app.js",
+  "bin": "bin/tessera.js",
+  "author": "Seth Fitzsimmons <seth@mojodna.net>",
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mojodna/tessera.git"
   },
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "prepublish": "npm install bower && bower install"
+  },
   "dependencies": {
-    "tessera": "^0.9.0",
-    "tilelive-http": "^0.10.0",
-    "tilelive-mapnik": "^0.6.18"
+    "@mapbox/mbtiles": "^0.9.0",
+    "@mapbox/sphericalmercator": "^1.0.2",
+    "@mapbox/tilejson": "^1.1.0",
+    "@mapbox/tilelive": "^6.0.0",
+    "@mapbox/tilelive-vector": "^4.2.0",
+    "@mapbox/tilelive-mapnik": "^1.0.0",
+    "@mapbox/tilelive-bridge": "^3.1.1",
+    "bower": "^1.8.4",
+    "cachecache": "^1.0.3",
+    "clone": "^2.1.2",
+    "cors": "^2.8.5",
+    "debug": "^3.2.6",
+    "express": "^4.16.4",
+    "handlebars": "^4.0.12",
+    "mapnik": "^3.5.0",
+    "morgan": "^1.9.1",
+    "nomnom": "^1.8.1",
+    "response-time": "^2.2.0",
+    "tilelive-cache": "^0.7.1",
+    "tilelive-modules": "^0.4.1",
+    "tilelive-tmsource": "^0.8.2",
+    "tilelive-tmstyle": "^0.8.0",
+    "tilelive-xray": "^0.4.0"
   }
 }
