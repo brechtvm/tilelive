@@ -29,5 +29,8 @@
     "xml": "//Users/seth/style/mapbox-studio-osm-bright.tm2/project.xml",
     "source": "tilejson:///Users/seth/style/tilejson.json"
   },
+  "/BM_Axxess": {
+    "source": "tmstyle:///Users/seth/style/BM-Axxes.tm2"
+  },
   "/b": "mbtiles:///Users/seth/archive.mbtiles"
 }
