@@ -20,19 +20,24 @@ Map {
 #boundary[admin_level=2] {
     [maritime=0],[disputed=0] {
       line-color: #9e9cab;
-      line-width: 1;
+      line-width: 1.5;
       line-cap: round;
       line-join: round;
     }
+ 
     [maritime=1]{
       line-color: #a0c8f0;
       line-opacity: 0.5;
-      line-width: 1
+      line-width: 3
     }
   
     [disputed=1]{
         line-dasharray:9,7;
   }
+   [zoom>=7] { line-width: 2.5; } 
+   [zoom>=9] { line-width: 3.5; } 
+   [zoom>=11] { line-width: 4.5; } 
+   [zoom>=13] { line-width: 5; } 
 }
 #boundary[admin_level>=3] {
    [maritime=0] {
@@ -47,7 +52,7 @@ Map {
       line-color: #a0c8f0;
       line-opacity: 0.5;
       line-dasharray: 3, 1, 1, 1;
-      line-width: 1
+      line-width: 3
     }
 }
 
@@ -82,10 +87,12 @@ Map {
 }
 
 #waterway {
-  line-color: @water * 0.9;
-  line-cap: round;
-  line-width: 0.5;
+  
   [class='river'] {
+    line-color: @water * 0.9;
+    line-cap: round;
+     line-width: 0; 
+    [zoom>=7] {  line-width: 0.5; }
     [zoom>=12] { line-width: 1; }
     [zoom>=14] { line-width: 2; }
     [zoom>=16] { line-width: 3; }
@@ -93,6 +100,9 @@ Map {
   [class='stream'],
   [class='stream_intermittent'],
   [class='canal'] {
+    line-color: @water * 0.9;
+    line-cap: round;
+    line-width: 0.5;
     [zoom>=14] { line-width: 1; }
     [zoom>=16] { line-width: 2; }
     [zoom>=18] { line-width: 3; }
@@ -102,7 +112,8 @@ Map {
 
 // ---------------------------------------------------------------------
 // Landuse areas 
-#landcover {
+
+#landcover{
   [class='grass'] { polygon-fill: #d8e8c8; }
   ::overlay {
     // Landuse classes look better as a transparent overlay.

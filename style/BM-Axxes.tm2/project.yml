@@ -1,17 +1,17 @@
-_prefs:
+_prefs: 
   saveCenter: true
-_properties:
-  bridge:
+_properties: 
+  bridge: 
     "group-by": layer
 attribution: "<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>"
-bounds:
+bounds: 
   - -180
   - -85.0511
   - 180
   - 85.0511
-center:
-  - 45.3516
-  - 16.4677
+center: 
+  - 22.5
+  - 14.094
   - 2
 description: ''
 format: "png8:m=h"
@@ -20,9 +20,8 @@ layers: null
 maxzoom: 22
 minzoom: 0
 name: OSM Bright 2
-#source: "http://beq.be/openmaptiles_source.json"
-source: "mbtiles:///Users/seth/archive.mbtiles"
-styles:
+source: "http://beq.be/openmaptiles_source.json"
+styles: 
   - style.mss
   - road.mss
   - labels.mss
